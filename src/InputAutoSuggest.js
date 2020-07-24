@@ -47,6 +47,7 @@ class InputAutoSuggest extends Component {
       staticData,
       placeholder,
       placeholderTextColor,
+      autoFocus
 
     } = this.props;
     this.setState({ value: text });
@@ -100,6 +101,7 @@ class InputAutoSuggest extends Component {
           clearButtonMode="while-editing"
           onChangeText={this.searchList}
           placeholder={this.props.placeholder}
+          autoFocus={this.props.autoFocus}
 
         />
         <FlatList
